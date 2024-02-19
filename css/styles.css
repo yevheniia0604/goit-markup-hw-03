@@ -11,6 +11,18 @@ button {
 ul, 
 ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
 }
 
 body{
@@ -30,6 +42,9 @@ font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: #4d5ae5;
 }
+
+  
+
 .logo-style{
     font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -51,17 +66,24 @@ font-family: "Raleway", sans-serif;
 
 
 .menu-link{
+display: block;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #2e2f42;    
+color: #2e2f42; 
+padding-top: 24px;
+padding-bottom: 24px;   
 }
+
 .menu-link:hover, 
 .menu-link:focus{
     color: #404bbf;
 }
+
 .contact{
+    display: flex;
+     align-items: center;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -79,6 +101,11 @@ color: #2e2f42;
     background-color:#2e2f42;
 }
 .title{
+       max-width: 496px;
+      margin-bottom: 48px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -88,7 +115,11 @@ color: #2e2f42;
         text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
        
     }
+
  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -96,7 +127,13 @@ color: #2e2f42;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5
+    background-color: #4D5AE5;
+    min-width: 169px;
+        height: 56px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border: none;
+        border-radius: 4px;
     }
 
     .button:hover,
@@ -105,10 +142,28 @@ color: #2e2f42;
         background: #404bbf;
     }
 /* /Hero Sections Styles*/
-.section-team{
+.section{
     background-color: #F4F4FD;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
+
+.team {
+    display: flex;
+    gap: 24px;
+
+}
+.menu-benefits {
+    display: flex;
+        gap: 24px;
+        }
+
+    .portfolio-list {
+    display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
  .menu-benefits-title {
         font-weight: 500;
         font-size: 20px;
@@ -128,6 +183,9 @@ color: #2e2f42;
          font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        width: 264px;
+        padding-top: 140px;
+        padding-bottom: 100px;
         }
 
 .secondary-title {
@@ -138,10 +196,18 @@ color: #2e2f42;
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .team-member{
 background-color: #FFFFFF;
+width: calc((100% - 72px)/ 4);
 }
+.menu-benefits-title {
+    width: calc((100% - 72px)/ 4);
+}
+
 .position{
     font-size: 16px;
     line-height: 1.5;
@@ -167,4 +233,47 @@ background-color: #FFFFFF;
 
 .bottom{
     background-color: #2e2f42;
+    height: 312px;
 }
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.benefits-container {
+    display: flex;
+    gap: 24px;
+    width: 1158px;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    column-gap: 40px;
+}
+.contact-list {
+    display: flex;
+    column-gap: 40px;
+    
+    }
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+.logo {
+    margin-right: 76px;
+}
+
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 292px;
+    }
+ 
+    .portfolio-item {
+        width: calc((100% - 48px)/3);
+    }
