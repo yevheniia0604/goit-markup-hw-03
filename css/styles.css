@@ -167,6 +167,7 @@ padding-bottom: 24px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .menu-benefits-text{
         font-size: 16px;
@@ -199,11 +200,7 @@ padding-bottom: 24px;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    }
-    .second-title {
-        margin-bottom: 8px;
-    }
-
+}
 .team-member{
 background-color: #FFFFFF;
 width: calc((100% - 72px)/ 4);
