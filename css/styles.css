@@ -41,6 +41,8 @@ font-family: 'Raleway', sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
   
@@ -99,6 +101,8 @@ padding-bottom: 24px;
 /* Hero Sections Styles*/
 .main-page{
     background-color:#2e2f42;
+    padding: 188px 0;
+    /*padding-bottom: 292px;*/
 }
 .title{
        max-width: 496px;
@@ -112,7 +116,7 @@ padding-bottom: 24px;
         letter-spacing: 0.02em;
         text-align: center;
         color: #ffffff;
-        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        
        
     }
 
@@ -144,8 +148,8 @@ padding-bottom: 24px;
 /* /Hero Sections Styles*/
 .section{
     background-color: #F4F4FD;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+        padding-bottom: 120px;
 
 }
 
@@ -161,7 +165,8 @@ padding-bottom: 24px;
 
     .portfolio-list {
     display: flex;
-        gap: 24px;
+        column-gap: 24px; 
+        row-gap: 48px;
         flex-wrap: wrap;
     }
  .menu-benefits-title {
@@ -203,9 +208,7 @@ padding-bottom: 24px;
 .team-member{
 background-color: #FFFFFF;
 width: calc((100% - 72px)/ 4);
-}
-.menu-benefits-title {
-    width: calc((100% - 72px)/ 4);
+border-radius: 0px 0px 4px 4px;
 }
 
 .position{
@@ -220,10 +223,12 @@ width: calc((100% - 72px)/ 4);
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        text-align: center;
+        text-align: center; 
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .portfolio-title{
+    margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -234,6 +239,7 @@ width: calc((100% - 72px)/ 4);
 .bottom{
     background-color: #2e2f42;
     height: 312px;
+    padding: 100px 0;
 }
 
 .container {
@@ -243,10 +249,14 @@ width: calc((100% - 72px)/ 4);
     margin-left: auto;
     margin-right: auto;
 }
-.benefits-container {
+.benefits-section {
     display: flex;
     gap: 24px;
     width: 1158px;
+    padding: 120px 0;
+}
+.benefits-item {
+    width: calc((100% - 72px) / 4);
 }
 .page-nav {
     display: flex;
@@ -254,26 +264,35 @@ width: calc((100% - 72px)/ 4);
 }
 .menu {
     display: flex;
-    column-gap: 40px;
+    /*column-gap: 40px;*/
+    gap: 40px;
 }
 .contact-list {
     display: flex;
     column-gap: 40px;
-    
+    gap: 40px;
     }
-.page-header-container {
+
+  .page-header {
+    border-bottom: 1px solid #e7e9fc;
     display: flex;
     justify-content: space-between;
+    padding: 0 15px 0 15px;
   }
+  
 .logo {
     margin-right: 76px;
 }
 
-.hero-container {
-    padding-top: 188px;
-    padding-bottom: 292px;
-    }
- 
     .portfolio-item {
         width: calc((100% - 48px)/3);
     }
+.section-team {
+    padding: 120px 0;
+    background: #f4f4fd;
+}
+.app-wrapper {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
