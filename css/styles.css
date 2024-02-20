@@ -199,8 +199,11 @@ padding-bottom: 24px;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    margin-bottom: 8px;
-}
+    }
+    .second-title {
+        margin-bottom: 8px;
+    }
+
 .team-member{
 background-color: #FFFFFF;
 width: calc((100% - 72px)/ 4);
@@ -209,7 +212,6 @@ border-radius: 0px 0px 4px 4px;
 .card-employee {
  padding: 32px 0;   
 }
-
 
 .position{
     font-size: 16px;
@@ -236,7 +238,6 @@ border-radius: 0px 0px 4px 4px;
         color: #2e2f42;
 }
 
-
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -257,8 +258,7 @@ border-radius: 0px 0px 4px 4px;
 .page-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
+    }
 .menu {
     display: flex;
     /*column-gap: 40px;*/
@@ -293,6 +293,10 @@ border-radius: 0px 0px 4px 4px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 
                            /*=========Footer=========*/
