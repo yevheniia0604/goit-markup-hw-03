@@ -92,6 +92,15 @@ padding-bottom: 24px;
 
 /* Hero Sections Styles*/
 .main-page{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-background.jpg");
+    background-size: cover;
     background-color:#2e2f42;
     padding: 188px 0;
     /*padding-bottom: 292px;*/
@@ -244,10 +253,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .benefits-section {
-    display: flex;
-    gap: 24px;
-    width: 1158px;
-    padding: 120px 0;
+   padding: 120px 0;
 }
 .benefits-item {
     width: calc((100% - 72px) / 4);
@@ -285,6 +291,14 @@ border-radius: 0px 0px 4px 4px;
 .section-team {
     padding: 120px 0;
     background: #f4f4fd;
+}
+.social-list {
+    display: flex;
+    gap: 24px;
+}
+.social-list-icon {
+    fill: none;
+    stroke: white;
 }
 .app-wrapper {
     padding: 32px 16px;
